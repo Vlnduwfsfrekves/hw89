@@ -1,0 +1,62 @@
+.fetures{  
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+    }
+    
+
+}
+
+.fetures-item{
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 60px) / 2);
+        margin: 15px;
+    }
+    
+}
+
+.fetures-item:not(:last-child){
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+    
+}
+
+.icon-box{
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.fetures-icon{
+    width: 70px;
+    height: 70px;  
+}
+
+.fetures-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.fetures-text{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
